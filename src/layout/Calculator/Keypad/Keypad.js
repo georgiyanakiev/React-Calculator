@@ -33,11 +33,10 @@ const keypad = () => (
     </KeypadRow>
     
     <KeypadRow>
-    <Button>0</Button>
-    <Button>.</Button>
-    <LargeButton>=</LargeButton>
-    
-    </KeypadRow>
+    <Button onButtonPress={props.onButtonPress}>0</Button>
+    <Button onButtonPress={props.onButtonPress}>.</Button>
+    <LargeButton onButtonPress={props.onButtonPress}>=</LargeButton>
+  </KeypadRow>
   </section>
 );
 export default keypad;
